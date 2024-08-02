@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome()
 
     # Navigate to url
-driver.get("https://www.predictit.org/markets/detail/8089/Who-will-win-the-2024-Democratic-vice-presidential-nomination")
+driver.get("https://www.predictit.org/markets/detail/7456/Who-will-win-the-2024-US-presidential-election")
 driver.implicitly_wait(2)
     # Retrieves the text of the element
 
