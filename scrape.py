@@ -18,3 +18,6 @@ with open("scraped_quotes.csv", "w", newline='') as file:
         #print(type(quote), type(author))
         print(quote.text + " _ " + author.text)
         writer.writerow([quote.text, author.text])
+    
+
+#connor test
