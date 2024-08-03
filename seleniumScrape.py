@@ -1,20 +1,22 @@
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
+import time
+
+driver = webdriver.Chrome()
 
 def Democratic_vice_presidential_nominee(): # KEEP COMMENTS FOR THIS FUNCTION (FOR FUTURE REFERENCE)
-    driver = webdriver.Chrome()
 
         # Navigate to url
     driver.get("https://www.predictit.org/markets/detail/8089/Who-will-win-the-2024-Democratic-vice-presidential-nomination")
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(0.4)
         # Retrieves the text of the element
 
     # expands page to reveal all contracts
     try:
         more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
         more_button.click()
-        driver.implicitly_wait(2)
+        driver.implicitly_wait(0.4)
     except NoSuchElementException:
         print()
 
@@ -49,15 +51,14 @@ def Democratic_vice_presidential_nominee(): # KEEP COMMENTS FOR THIS FUNCTION (F
     else:
         print("\nDO NOT BUY\n\n")
 def Democratic_2024_presidential_nominee():
-    driver = webdriver.Chrome()
 
     driver.get("https://www.predictit.org/markets/detail/7057/Who-will-win-the-2024-Democratic-presidential-nomination")
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(0.4)
 
     try:
         more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
         more_button.click()
-        driver.implicitly_wait(2)
+        driver.implicitly_wait(0.4)
     except NoSuchElementException:
         print()
 
@@ -78,15 +79,14 @@ def Democratic_2024_presidential_nominee():
     else:
         print("\nDO NOT BUY\n\n")
 def Electoral_College_margin_in_2024():
-    driver = webdriver.Chrome()
 
     driver.get("https://www.predictit.org/markets/detail/8077/What-will-be-the-Electoral-College-margin-in-the-2024-presidential-election")
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(0.4)
 
     try:
         more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
         more_button.click()
-        driver.implicitly_wait(2)
+        driver.implicitly_wait(0.4)
     except NoSuchElementException:
         print()
 
@@ -107,15 +107,14 @@ def Electoral_College_margin_in_2024():
     else:
         print("\nDO NOT BUY\n\n")
 def a2024_presidential_election_winner():
-    driver = webdriver.Chrome()
 
     driver.get("https://www.predictit.org/markets/detail/7456/Who-will-win-the-2024-US-presidential-election")
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(0.4)
 
     try:
         more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
         more_button.click()
-        driver.implicitly_wait(2)
+        driver.implicitly_wait(0.4)
     except NoSuchElementException:
         print()
 
@@ -136,15 +135,14 @@ def a2024_presidential_election_winner():
     else:
         print("\nDO NOT BUY\n\n")
 def Which_party_wins_the_presidency_in_2024():
-    driver = webdriver.Chrome()
 
     driver.get("https://www.predictit.org/markets/detail/6867/Which-party-will-win-the-2024-US-presidential-election")
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(0.4)
 
     try:
         more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
         more_button.click()
-        driver.implicitly_wait(2)
+        driver.implicitly_wait(0.4)
     except NoSuchElementException:
         print()
 
@@ -165,15 +163,14 @@ def Which_party_wins_the_presidency_in_2024():
     else:
         print("\nDO NOT BUY\n\n")
 def Harris_on_2024_democratic_ticket():
-    driver = webdriver.Chrome()
 
     driver.get("https://www.predictit.org/markets/detail/7629/Will-Kamala-Harris-be-on-the-2024-Democratic-ticket")
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(0.4)
 
     try:
         more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
         more_button.click()
-        driver.implicitly_wait(2)
+        driver.implicitly_wait(0.4)
     except NoSuchElementException:
         print()
 
@@ -194,15 +191,16 @@ def Harris_on_2024_democratic_ticket():
     else:
         print("\nDO NOT BUY\n\n")
 def Will_joe_biden_resign_during_his_first_term():
-    driver = webdriver.Chrome()
 
     driver.get("https://www.predictit.org/markets/detail/7136/Will-Joe-Biden-resign-during-his-first-term")
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(0.4)
+
 
     try:
         more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
         more_button.click()
-        driver.implicitly_wait(2)
+        driver.implicitly_wait(0.4)
+
     except NoSuchElementException:
         print()
 
@@ -223,15 +221,16 @@ def Will_joe_biden_resign_during_his_first_term():
     else:
         print("\nDO NOT BUY\n\n")
 def Which_party_will_win_Georgia_in_the_2024_presidential_election():
-    driver = webdriver.Chrome()
 
     driver.get("https://www.predictit.org/markets/detail/8072/Which-party-will-win-Georgia-in-the-2024-presidential-election")
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(0.4)
+
 
     try:
         more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
         more_button.click()
-        driver.implicitly_wait(2)
+        driver.implicitly_wait(0.4)
+
     except NoSuchElementException:
         print()
 
@@ -252,15 +251,16 @@ def Which_party_will_win_Georgia_in_the_2024_presidential_election():
     else:
         print("\nDO NOT BUY\n\n")
 def Harris_the_47th_US_president():
-    driver = webdriver.Chrome()
 
     driver.get("https://www.predictit.org/markets/detail/7419/Will-Kamala-Harris-be-the-47th-US-president")
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(0.4)
+
 
     try:
         more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
         more_button.click()
-        driver.implicitly_wait(2)
+        driver.implicitly_wait(0.4)
+
     except NoSuchElementException:
         print()
 
@@ -281,15 +281,16 @@ def Harris_the_47th_US_president():
     else:
         print("\nDO NOT BUY\n\n")
 def Woman_president_elected_in_2024():
-    driver = webdriver.Chrome()
 
     driver.get("https://www.predictit.org/markets/detail/7013/Will-a-woman-be-elected-US-president-in-2024")
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(0.4)
+
 
     try:
         more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
         more_button.click()
-        driver.implicitly_wait(2)
+        driver.implicitly_wait(0.4)
+
     except NoSuchElementException:
         print()
 
@@ -310,15 +311,16 @@ def Woman_president_elected_in_2024():
     else:
         print("\nDO NOT BUY\n\n")
 def Which_party_will_win_Wisconsin_in_the_2024_presidential_election():
-    driver = webdriver.Chrome()
 
     driver.get("https://www.predictit.org/markets/detail/8076/Which-party-will-win-Wisconsin-in-the-2024-presidential-election")
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(0.4)
+
 
     try:
         more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
         more_button.click()
-        driver.implicitly_wait(2)
+        driver.implicitly_wait(0.4)
+
     except NoSuchElementException:
         print()
 
@@ -339,15 +341,16 @@ def Which_party_will_win_Wisconsin_in_the_2024_presidential_election():
     else:
         print("\nDO NOT BUY\n\n")
 def Which_party_will_win_the_2024_senate_election_in_arizona():
-    driver = webdriver.Chrome()
 
     driver.get("https://www.predictit.org/markets/detail/8070/Which-party-will-win-the-2024-US-Senate-election-in-Arizona")
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(0.4)
+
 
     try:
         more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
         more_button.click()
-        driver.implicitly_wait(2)
+        driver.implicitly_wait(0.4)
+
     except NoSuchElementException:
         print()
 
@@ -368,15 +371,16 @@ def Which_party_will_win_the_2024_senate_election_in_arizona():
     else:
         print("\nDO NOT BUY\n\n")
 def Which_party_will_win_the_2024_US_senate_election_in_ohio():
-    driver = webdriver.Chrome()
 
     driver.get("https://www.predictit.org/markets/detail/8075/Which-party-will-win-the-2024-US-Senate-election-in-Ohio")
-    driver.implicitly_wait(2)
+    driver.implicitly_wait(0.4)
+
 
     try:
         more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
         more_button.click()
-        driver.implicitly_wait(2)
+        driver.implicitly_wait(0.4)
+
     except NoSuchElementException:
         print()
 
@@ -416,15 +420,28 @@ def minExpectedValue(integer_list):
     return(value)
 
 Democratic_vice_presidential_nominee()
+time.sleep(7)
 Democratic_2024_presidential_nominee()
+time.sleep(7)
 Electoral_College_margin_in_2024()
+time.sleep(7)
 a2024_presidential_election_winner()
+time.sleep(7)
 Which_party_wins_the_presidency_in_2024()
-Harris_on_2024_democratic_ticket()
-Will_joe_biden_resign_during_his_first_term()
+time.sleep(7)
+# Harris_on_2024_democratic_ticket()
+# time.sleep(7)
+# Will_joe_biden_resign_during_his_first_term()
+# time.sleep(7)
 Which_party_will_win_Georgia_in_the_2024_presidential_election()
-Harris_the_47th_US_president()
-Woman_president_elected_in_2024()
+time.sleep(7)
+# Harris_the_47th_US_president()
+# time.sleep(7)
+# Woman_president_elected_in_2024()
+# time.sleep(7)
 Which_party_will_win_Wisconsin_in_the_2024_presidential_election()
+time.sleep(7)
 Which_party_will_win_the_2024_senate_election_in_arizona()
+time.sleep(7)
 Which_party_will_win_the_2024_US_senate_election_in_ohio()
+time.sleep(7)
