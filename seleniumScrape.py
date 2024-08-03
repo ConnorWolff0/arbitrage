@@ -10,13 +10,13 @@ def Democratic_vice_presidential_nominee(): # KEEP COMMENTS FOR THIS FUNCTION (F
     driver.implicitly_wait(2)
         # Retrieves the text of the element
 
-
-    #####  WARNING !!!!! we need to expand the page to find all the contracts available !!!!
-
-    more_button = driver.find_element(by=By.CLASS_NAME, value="market-detail__contracts-toggle-more")
-    driver.implicitly_wait(2)
-    more_button.click()
-    driver.implicitly_wait(2)
+    # expands page to reveal all contracts
+    try:
+        more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
+        more_button.click()
+        driver.implicitly_wait(2)
+    except NoSuchElementException:
+        print()
 
     # collects all information regarding offer prices
     elements = driver.find_elements(By.CLASS_NAME, "button-price__price")
@@ -54,10 +54,12 @@ def Democratic_2024_presidential_nominee():
     driver.get("https://www.predictit.org/markets/detail/7057/Who-will-win-the-2024-Democratic-presidential-nomination")
     driver.implicitly_wait(2)
 
-    more_button = driver.find_element(by=By.CLASS_NAME, value="market-detail__contracts-toggle-more")
-    driver.implicitly_wait(2)
-    more_button.click()
-    driver.implicitly_wait(2)
+    try:
+        more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
+        more_button.click()
+        driver.implicitly_wait(2)
+    except NoSuchElementException:
+        print()
 
     elements = driver.find_elements(By.CLASS_NAME, "button-price__price")
 
@@ -81,10 +83,12 @@ def Electoral_College_margin_in_2024():
     driver.get("https://www.predictit.org/markets/detail/8077/What-will-be-the-Electoral-College-margin-in-the-2024-presidential-election")
     driver.implicitly_wait(2)
 
-    more_button = driver.find_element(by=By.CLASS_NAME, value="market-detail__contracts-toggle-more")
-    driver.implicitly_wait(2)
-    more_button.click()
-    driver.implicitly_wait(2)
+    try:
+        more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
+        more_button.click()
+        driver.implicitly_wait(2)
+    except NoSuchElementException:
+        print()
 
     elements = driver.find_elements(By.CLASS_NAME, "button-price__price")
 
@@ -108,10 +112,12 @@ def a2024_presidential_election_winner():
     driver.get("https://www.predictit.org/markets/detail/7456/Who-will-win-the-2024-US-presidential-election")
     driver.implicitly_wait(2)
 
-    more_button = driver.find_element(by=By.CLASS_NAME, value="market-detail__contracts-toggle-more")
-    driver.implicitly_wait(2)
-    more_button.click()
-    driver.implicitly_wait(2)
+    try:
+        more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
+        more_button.click()
+        driver.implicitly_wait(2)
+    except NoSuchElementException:
+        print()
 
     elements = driver.find_elements(By.CLASS_NAME, "button-price__price")
 
@@ -135,10 +141,12 @@ def Which_party_wins_the_presidency_in_2024():
     driver.get("https://www.predictit.org/markets/detail/6867/Which-party-will-win-the-2024-US-presidential-election")
     driver.implicitly_wait(2)
 
-    more_button = driver.find_element(by=By.CLASS_NAME, value="market-detail__contracts-toggle-more")
-    driver.implicitly_wait(2)
-    more_button.click()
-    driver.implicitly_wait(2)
+    try:
+        more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
+        more_button.click()
+        driver.implicitly_wait(2)
+    except NoSuchElementException:
+        print()
 
     elements = driver.find_elements(By.CLASS_NAME, "button-price__price")
 
@@ -162,10 +170,12 @@ def Harris_on_2024_democratic_ticket():
     driver.get("https://www.predictit.org/markets/detail/7629/Will-Kamala-Harris-be-on-the-2024-Democratic-ticket")
     driver.implicitly_wait(2)
 
-    more_button = driver.find_element(by=By.CLASS_NAME, value="market-detail__contracts-toggle-more")
-    driver.implicitly_wait(2)
-    more_button.click()
-    driver.implicitly_wait(2)
+    try:
+        more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
+        more_button.click()
+        driver.implicitly_wait(2)
+    except NoSuchElementException:
+        print()
 
     elements = driver.find_elements(By.CLASS_NAME, "button-price__price")
 
@@ -189,10 +199,12 @@ def Will_joe_biden_resign_during_his_first_term():
     driver.get("https://www.predictit.org/markets/detail/7136/Will-Joe-Biden-resign-during-his-first-term")
     driver.implicitly_wait(2)
 
-    more_button = driver.find_element(by=By.CLASS_NAME, value="market-detail__contracts-toggle-more")
-    driver.implicitly_wait(2)
-    more_button.click()
-    driver.implicitly_wait(2)
+    try:
+        more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
+        more_button.click()
+        driver.implicitly_wait(2)
+    except NoSuchElementException:
+        print()
 
     elements = driver.find_elements(By.CLASS_NAME, "button-price__price")
 
@@ -216,10 +228,12 @@ def Which_party_will_win_Georgia_in_the_2024_presidential_election():
     driver.get("https://www.predictit.org/markets/detail/8072/Which-party-will-win-Georgia-in-the-2024-presidential-election")
     driver.implicitly_wait(2)
 
-    more_button = driver.find_element(by=By.CLASS_NAME, value="market-detail__contracts-toggle-more")
-    driver.implicitly_wait(2)
-    more_button.click()
-    driver.implicitly_wait(2)
+    try:
+        more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
+        more_button.click()
+        driver.implicitly_wait(2)
+    except NoSuchElementException:
+        print()
 
     elements = driver.find_elements(By.CLASS_NAME, "button-price__price")
 
@@ -243,10 +257,12 @@ def Harris_the_47th_US_president():
     driver.get("https://www.predictit.org/markets/detail/7419/Will-Kamala-Harris-be-the-47th-US-president")
     driver.implicitly_wait(2)
 
-    more_button = driver.find_element(by=By.CLASS_NAME, value="market-detail__contracts-toggle-more")
-    driver.implicitly_wait(2)
-    more_button.click()
-    driver.implicitly_wait(2)
+    try:
+        more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
+        more_button.click()
+        driver.implicitly_wait(2)
+    except NoSuchElementException:
+        print()
 
     elements = driver.find_elements(By.CLASS_NAME, "button-price__price")
 
@@ -270,10 +286,12 @@ def Woman_president_elected_in_2024():
     driver.get("https://www.predictit.org/markets/detail/7013/Will-a-woman-be-elected-US-president-in-2024")
     driver.implicitly_wait(2)
 
-    more_button = driver.find_element(by=By.CLASS_NAME, value="market-detail__contracts-toggle-more")
-    driver.implicitly_wait(2)
-    more_button.click()
-    driver.implicitly_wait(2)
+    try:
+        more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
+        more_button.click()
+        driver.implicitly_wait(2)
+    except NoSuchElementException:
+        print()
 
     elements = driver.find_elements(By.CLASS_NAME, "button-price__price")
 
@@ -297,10 +315,12 @@ def Which_party_will_win_Wisconsin_in_the_2024_presidential_election():
     driver.get("https://www.predictit.org/markets/detail/8076/Which-party-will-win-Wisconsin-in-the-2024-presidential-election")
     driver.implicitly_wait(2)
 
-    more_button = driver.find_element(by=By.CLASS_NAME, value="market-detail__contracts-toggle-more")
-    driver.implicitly_wait(2)
-    more_button.click()
-    driver.implicitly_wait(2)
+    try:
+        more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
+        more_button.click()
+        driver.implicitly_wait(2)
+    except NoSuchElementException:
+        print()
 
     elements = driver.find_elements(By.CLASS_NAME, "button-price__price")
 
@@ -324,10 +344,12 @@ def Which_party_will_win_the_2024_senate_election_in_arizona():
     driver.get("https://www.predictit.org/markets/detail/8070/Which-party-will-win-the-2024-US-Senate-election-in-Arizona")
     driver.implicitly_wait(2)
 
-    more_button = driver.find_element(by=By.CLASS_NAME, value="market-detail__contracts-toggle-more")
-    driver.implicitly_wait(2)
-    more_button.click()
-    driver.implicitly_wait(2)
+    try:
+        more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
+        more_button.click()
+        driver.implicitly_wait(2)
+    except NoSuchElementException:
+        print()
 
     elements = driver.find_elements(By.CLASS_NAME, "button-price__price")
 
@@ -351,10 +373,12 @@ def Which_party_will_win_the_2024_US_senate_election_in_ohio():
     driver.get("https://www.predictit.org/markets/detail/8075/Which-party-will-win-the-2024-US-Senate-election-in-Ohio")
     driver.implicitly_wait(2)
 
-    more_button = driver.find_element(by=By.CLASS_NAME, value="market-detail__contracts-toggle-more")
-    driver.implicitly_wait(2)
-    more_button.click()
-    driver.implicitly_wait(2)
+    try:
+        more_button = driver.find_element(By.CLASS_NAME, "market-detail__contracts-toggle-more")
+        more_button.click()
+        driver.implicitly_wait(2)
+    except NoSuchElementException:
+        print()
 
     elements = driver.find_elements(By.CLASS_NAME, "button-price__price")
 
